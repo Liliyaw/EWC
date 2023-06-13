@@ -1,0 +1,437 @@
+{
+  "modules": {
+    "rec": {
+      "executors": [
+        "aot"
+      ],
+      "export_datetime": "2023-06-13 21:11:55Z",
+      "external_dependencies": [
+        {
+          "short_name": "tvm_standalone_crt",
+          "url": "./runtime",
+          "url_type": "mlf_path",
+          "version_spec": "0.13.dev234+g21361a63a"
+        }
+      ],
+      "memory": {
+        "functions": {
+          "main": [
+            {
+              "constants_size_bytes": 2164140,
+              "device": 1,
+              "inputs": {
+                "x": {
+                  "dtype": "float32",
+                  "size": 122880
+                }
+              },
+              "io_size_bytes": 11742772,
+              "outputs": {
+                "output": {
+                  "dtype": "float32",
+                  "size": 31040
+                }
+              },
+              "workspace_size_bytes": 1429176
+            }
+          ],
+          "operator_functions": [
+            {
+              "function_name": "tvmgen_rec_fused_squeeze_expand_dims_multiply_layout_transform",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_1",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_subtract_exp",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_2",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_divide",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_11",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_23",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_dense",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_16",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_7",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_squeeze_expand_dims_multiply_layout_transform_1",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_12",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_4",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_adaptive_avg_pool2d_1",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_sum",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_17",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_24",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_9",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_1",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_20",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_13",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_max",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_6",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_25",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_18",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_nn_relu",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_max_pool2d",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_reshape_add",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_21",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_3",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_14",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_adaptive_avg_pool2d",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_26",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_8",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_19",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_squeeze_transpose_reshape",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_10",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_nn_relu_1",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_22",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_5",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            },
+            {
+              "function_name": "tvmgen_rec_fused_nn_conv2d_add_clip_divide_add_multiply_15",
+              "workspace": [
+                {
+                  "device": 1,
+                  "workspace_size_bytes": 0
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "model_name": "rec",
+      "style": "full-model",
+      "target": [
+        "c -keys=arm_cpu,cpu -mcpu=cortex-m85"
+      ]
+    }
+  },
+  "version": 7
+}

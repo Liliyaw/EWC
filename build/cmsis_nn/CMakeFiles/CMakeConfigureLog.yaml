@@ -1,0 +1,448 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:199 (message)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      The target system is: Generic -  - cortex-m55
+      The host system is: Linux - 5.13.0-1029-aws - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x28): undefined reference to `_exit'
+      /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-writer.o): in function `_write_r':
+      writer.c:(.text._write_r+0x24): undefined reference to `_write'
+      /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-closer.o): in function `_close_r':
+      closer.c:(.text._close_r+0x18): undefined reference to `_close'
+      /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-lseekr.o): in function `_lseek_r':
+      lseekr.c:(.text._lseek_r+0x24): undefined reference to `_lseek'
+      /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-readr.o): in function `_read_r':
+      readr.c:(.text._read_r+0x24): undefined reference to `_read'
+      /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+      sbrkr.c:(.text._sbrk_r+0x18): undefined reference to `_sbrk'
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        /home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x28): undefined reference to `_exit'
+      /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-writer.o): in function `_write_r':
+      writer.c:(.text._write_r+0x24): undefined reference to `_write'
+      /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-closer.o): in function `_close_r':
+      closer.c:(.text._close_r+0x18): undefined reference to `_close'
+      /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-lseekr.o): in function `_lseek_r':
+      lseekr.c:(.text._lseek_r+0x24): undefined reference to `_lseek'
+      /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-readr.o): in function `_read_r':
+      readr.c:(.text._read_r+0x24): undefined reference to `_read'
+      /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/ld: /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+      sbrkr.c:(.text._sbrk_r+0x18): undefined reference to `_sbrk'
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:21 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-c7Bhwu"
+      binary: "/home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-c7Bhwu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-c7Bhwu
+        
+        Run Build Command(s):/snap/cmake/1299/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_db0b2/fast && make[1]: Entering directory '/home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-c7Bhwu'
+        /usr/bin/make  -f CMakeFiles/cmTC_db0b2.dir/build.make CMakeFiles/cmTC_db0b2.dir/build
+        make[2]: Entering directory '/home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-c7Bhwu'
+        Building C object CMakeFiles/cmTC_db0b2.dir/CMakeCCompilerABI.c.obj
+        /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc   -std=gnu99   -v -mcpu=cortex-m55 -mfloat-abi=hard -Wall -Wextra -Wsign-compare -Wunused -Wswitch-default -Wdouble-promotion -Wredundant-decls -Wshadow -Wnull-dereference -Wno-format-extra-args -Wno-unused-function -Wno-unused-label -Wno-missing-field-initializers -Wno-return-type -Wno-format -Wno-int-conversion -o CMakeFiles/cmTC_db0b2.dir/CMakeCCompilerABI.c.obj -c /snap/cmake/1299/share/cmake-3.26/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc
+        Target: arm-none-eabi
+        Configured with: /data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-gnu-ld --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 12.2.MPACBTI-Rel1 (Build arm-12-mpacbti.34)' --with-bugurl=https://bugs.linaro.org/
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 12.2.1 20230214 (Arm GNU Toolchain 12.2.MPACBTI-Rel1 (Build arm-12-mpacbti.34)) 
+        COLLECT_GCC_OPTIONS='-std=gnu99' '-v' '-mcpu=cortex-m55' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wsign-compare' '-Wunused' '-Wswitch-default' '-Wdouble-promotion' '-Wredundant-decls' '-Wshadow' '-Wnull-dereference' '-Wno-format-extra-args' '-Wno-unused-function' '-Wno-unused-label' '-Wno-missing-field-initializers' '-Wno-return-type' '-Wformat=0' '-Wno-int-conversion' '-o' 'CMakeFiles/cmTC_db0b2.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv8.1-m.main+fp.dp+mve.fp' '-march=armv8.1-m.main+fp.dp+mve.fp' '-dumpdir' 'CMakeFiles/cmTC_db0b2.dir/'
+         /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/12.2.1/cc1 -quiet -v -imultilib thumb/v8-m.main+dp/hard -iprefix /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/ -isysroot /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /snap/cmake/1299/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_db0b2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m55 -mfloat-abi=hard -mthumb -mlibarch=armv8.1-m.main+fp.dp+mve.fp -march=armv8.1-m.main+fp.dp+mve.fp -Wall -Wextra -Wsign-compare -Wunused -Wswitch-default -Wdouble-promotion -Wredundant-decls -Wshadow -Wnull-dereference -Wno-format-extra-args -Wno-unused-function -Wno-unused-label -Wno-missing-field-initializers -Wno-return-type -Wformat=0 -Wno-int-conversion -std=gnu99 -version -o /tmp/ccvbvVdX.s
+        GNU C99 (Arm GNU Toolchain 12.2.MPACBTI-Rel1 (Build arm-12-mpacbti.34)) version 12.2.1 20230214 (arm-none-eabi)
+        	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.2.1/include"
+        ignoring nonexistent directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi/usr/local/include"
+        ignoring duplicate directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.2.1/include-fixed"
+        ignoring duplicate directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include"
+        ignoring nonexistent directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi/usr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/include
+         /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/include-fixed
+         /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include
+        End of search list.
+        GNU C99 (Arm GNU Toolchain 12.2.MPACBTI-Rel1 (Build arm-12-mpacbti.34)) version 12.2.1 20230214 (arm-none-eabi)
+        	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 62fa4b6d96c949152df7c5d314134db2
+        COLLECT_GCC_OPTIONS='-std=gnu99' '-v' '-mcpu=cortex-m55' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wsign-compare' '-Wunused' '-Wswitch-default' '-Wdouble-promotion' '-Wredundant-decls' '-Wshadow' '-Wnull-dereference' '-Wno-format-extra-args' '-Wno-unused-function' '-Wno-unused-label' '-Wno-missing-field-initializers' '-Wno-return-type' '-Wformat=0' '-Wno-int-conversion' '-o' 'CMakeFiles/cmTC_db0b2.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv8.1-m.main+fp.dp+mve.fp' '-march=armv8.1-m.main+fp.dp+mve.fp' '-dumpdir' 'CMakeFiles/cmTC_db0b2.dir/'
+         /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8.1-m.main+fp.dp+mve.fp -mfloat-abi=hard -meabi=5 -o CMakeFiles/cmTC_db0b2.dir/CMakeCCompilerABI.c.obj /tmp/ccvbvVdX.s
+        GNU assembler version 2.40.0 (arm-none-eabi) using BFD version (Arm GNU Toolchain 12.2.MPACBTI-Rel1 (Build arm-12-mpacbti.34)) 2.40.0.20230307
+        COMPILER_PATH=/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/12.2.1/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../libexec/gcc/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+dp/hard/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+dp/hard/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v8-m.main+dp/hard/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-std=gnu99' '-v' '-mcpu=cortex-m55' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wsign-compare' '-Wunused' '-Wswitch-default' '-Wdouble-promotion' '-Wredundant-decls' '-Wshadow' '-Wnull-dereference' '-Wno-format-extra-args' '-Wno-unused-function' '-Wno-unused-label' '-Wno-missing-field-initializers' '-Wno-return-type' '-Wformat=0' '-Wno-int-conversion' '-o' 'CMakeFiles/cmTC_db0b2.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv8.1-m.main+fp.dp+mve.fp' '-march=armv8.1-m.main+fp.dp+mve.fp' '-dumpdir' 'CMakeFiles/cmTC_db0b2.dir/CMakeCCompilerABI.c.'
+        Linking C static library libcmTC_db0b2.a
+        /snap/cmake/1299/bin/cmake -P CMakeFiles/cmTC_db0b2.dir/cmake_clean_target.cmake
+        /snap/cmake/1299/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db0b2.dir/link.txt --verbose=1
+        /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-ar qc libcmTC_db0b2.a CMakeFiles/cmTC_db0b2.dir/CMakeCCompilerABI.c.obj
+        /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-ranlib libcmTC_db0b2.a
+        make[2]: Leaving directory '/home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-c7Bhwu'
+        make[1]: Leaving directory '/home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-c7Bhwu'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/include]
+          add: [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/include-fixed]
+          add: [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include]
+        end of search list found
+        collapse include dir [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/include] ==> [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include]
+        collapse include dir [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/include-fixed] ==> [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include-fixed]
+        collapse include dir [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include] ==> [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/arm-none-eabi/include]
+        implicit include dirs: [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include;/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include-fixed;/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/arm-none-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-none-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-c7Bhwu]
+        ignore line: []
+        ignore line: [Run Build Command(s):/snap/cmake/1299/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_db0b2/fast && make[1]: Entering directory '/home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-c7Bhwu']
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_db0b2.dir/build.make CMakeFiles/cmTC_db0b2.dir/build]
+        ignore line: [make[2]: Entering directory '/home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-c7Bhwu']
+        ignore line: [Building C object CMakeFiles/cmTC_db0b2.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc   -std=gnu99   -v -mcpu=cortex-m55 -mfloat-abi=hard -Wall -Wextra -Wsign-compare -Wunused -Wswitch-default -Wdouble-promotion -Wredundant-decls -Wshadow -Wnull-dereference -Wno-format-extra-args -Wno-unused-function -Wno-unused-label -Wno-missing-field-initializers -Wno-return-type -Wno-format -Wno-int-conversion -o CMakeFiles/cmTC_db0b2.dir/CMakeCCompilerABI.c.obj -c /snap/cmake/1299/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-gnu-ld --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 12.2.MPACBTI-Rel1 (Build arm-12-mpacbti.34)' --with-bugurl=https://bugs.linaro.org/]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.2.1 20230214 (Arm GNU Toolchain 12.2.MPACBTI-Rel1 (Build arm-12-mpacbti.34)) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=gnu99' '-v' '-mcpu=cortex-m55' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wsign-compare' '-Wunused' '-Wswitch-default' '-Wdouble-promotion' '-Wredundant-decls' '-Wshadow' '-Wnull-dereference' '-Wno-format-extra-args' '-Wno-unused-function' '-Wno-unused-label' '-Wno-missing-field-initializers' '-Wno-return-type' '-Wformat=0' '-Wno-int-conversion' '-o' 'CMakeFiles/cmTC_db0b2.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv8.1-m.main+fp.dp+mve.fp' '-march=armv8.1-m.main+fp.dp+mve.fp' '-dumpdir' 'CMakeFiles/cmTC_db0b2.dir/']
+        ignore line: [ /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/12.2.1/cc1 -quiet -v -imultilib thumb/v8-m.main+dp/hard -iprefix /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/ -isysroot /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /snap/cmake/1299/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_db0b2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m55 -mfloat-abi=hard -mthumb -mlibarch=armv8.1-m.main+fp.dp+mve.fp -march=armv8.1-m.main+fp.dp+mve.fp -Wall -Wextra -Wsign-compare -Wunused -Wswitch-default -Wdouble-promotion -Wredundant-decls -Wshadow -Wnull-dereference -Wno-format-extra-args -Wno-unused-function -Wno-unused-label -Wno-missing-field-initializers -Wno-return-type -Wformat=0 -Wno-int-conversion -std=gnu99 -version -o /tmp/ccvbvVdX.s]
+        ignore line: [GNU C99 (Arm GNU Toolchain 12.2.MPACBTI-Rel1 (Build arm-12-mpacbti.34)) version 12.2.1 20230214 (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.2.1/include"]
+        ignore line: [ignoring nonexistent directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.2.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include"]
+        ignore line: [ignoring nonexistent directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi/usr/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/include]
+        ignore line: [ /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/include-fixed]
+        ignore line: [ /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C99 (Arm GNU Toolchain 12.2.MPACBTI-Rel1 (Build arm-12-mpacbti.34)) version 12.2.1 20230214 (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 62fa4b6d96c949152df7c5d314134db2]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=gnu99' '-v' '-mcpu=cortex-m55' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wsign-compare' '-Wunused' '-Wswitch-default' '-Wdouble-promotion' '-Wredundant-decls' '-Wshadow' '-Wnull-dereference' '-Wno-format-extra-args' '-Wno-unused-function' '-Wno-unused-label' '-Wno-missing-field-initializers' '-Wno-return-type' '-Wformat=0' '-Wno-int-conversion' '-o' 'CMakeFiles/cmTC_db0b2.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv8.1-m.main+fp.dp+mve.fp' '-march=armv8.1-m.main+fp.dp+mve.fp' '-dumpdir' 'CMakeFiles/cmTC_db0b2.dir/']
+        ignore line: [ /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8.1-m.main+fp.dp+mve.fp -mfloat-abi=hard -meabi=5 -o CMakeFiles/cmTC_db0b2.dir/CMakeCCompilerABI.c.obj /tmp/ccvbvVdX.s]
+        ignore line: [GNU assembler version 2.40.0 (arm-none-eabi) using BFD version (Arm GNU Toolchain 12.2.MPACBTI-Rel1 (Build arm-12-mpacbti.34)) 2.40.0.20230307]
+        ignore line: [COMPILER_PATH=/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/12.2.1/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../libexec/gcc/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+dp/hard/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+dp/hard/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v8-m.main+dp/hard/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=gnu99' '-v' '-mcpu=cortex-m55' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wsign-compare' '-Wunused' '-Wswitch-default' '-Wdouble-promotion' '-Wredundant-decls' '-Wshadow' '-Wnull-dereference' '-Wno-format-extra-args' '-Wno-unused-function' '-Wno-unused-label' '-Wno-missing-field-initializers' '-Wno-return-type' '-Wformat=0' '-Wno-int-conversion' '-o' 'CMakeFiles/cmTC_db0b2.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv8.1-m.main+fp.dp+mve.fp' '-march=armv8.1-m.main+fp.dp+mve.fp' '-dumpdir' 'CMakeFiles/cmTC_db0b2.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C static library libcmTC_db0b2.a]
+        ignore line: [/snap/cmake/1299/bin/cmake -P CMakeFiles/cmTC_db0b2.dir/cmake_clean_target.cmake]
+        ignore line: [/snap/cmake/1299/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db0b2.dir/link.txt --verbose=1]
+        ignore line: [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-ar qc libcmTC_db0b2.a CMakeFiles/cmTC_db0b2.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-ranlib libcmTC_db0b2.a]
+        ignore line: [make[2]: Leaving directory '/home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-c7Bhwu']
+        ignore line: [make[1]: Leaving directory '/home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-c7Bhwu']
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:21 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-jEEIEr"
+      binary: "/home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-jEEIEr"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-jEEIEr
+        
+        Run Build Command(s):/snap/cmake/1299/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d4d86/fast && make[1]: Entering directory '/home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-jEEIEr'
+        /usr/bin/make  -f CMakeFiles/cmTC_d4d86.dir/build.make CMakeFiles/cmTC_d4d86.dir/build
+        make[2]: Entering directory '/home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-jEEIEr'
+        Building CXX object CMakeFiles/cmTC_d4d86.dir/CMakeCXXCompilerABI.cpp.obj
+        /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-g++   -std=gnu++14   -v -mcpu=cortex-m55 -mfloat-abi=hard -Wall -Wextra -Wsign-compare -Wunused -Wswitch-default -Wdouble-promotion -Wredundant-decls -Wshadow -Wnull-dereference -Wno-format-extra-args -Wno-unused-function -Wno-unused-label -Wno-missing-field-initializers -Wno-return-type -Wno-format -Wno-int-conversion -fno-unwind-tables -fno-rtti -fno-exceptions -o CMakeFiles/cmTC_d4d86.dir/CMakeCXXCompilerABI.cpp.obj -c /snap/cmake/1299/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-g++
+        Target: arm-none-eabi
+        Configured with: /data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-gnu-ld --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 12.2.MPACBTI-Rel1 (Build arm-12-mpacbti.34)' --with-bugurl=https://bugs.linaro.org/
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 12.2.1 20230214 (Arm GNU Toolchain 12.2.MPACBTI-Rel1 (Build arm-12-mpacbti.34)) 
+        COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-mcpu=cortex-m55' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wsign-compare' '-Wunused' '-Wswitch-default' '-Wdouble-promotion' '-Wredundant-decls' '-Wshadow' '-Wnull-dereference' '-Wno-format-extra-args' '-Wno-unused-function' '-Wno-unused-label' '-Wno-missing-field-initializers' '-Wno-return-type' '-Wformat=0' '-Wno-int-conversion' '-fno-unwind-tables' '-fno-rtti' '-fno-exceptions' '-o' 'CMakeFiles/cmTC_d4d86.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv8.1-m.main+fp.dp+mve.fp' '-march=armv8.1-m.main+fp.dp+mve.fp' '-dumpdir' 'CMakeFiles/cmTC_d4d86.dir/'
+         /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/12.2.1/cc1plus -quiet -v -imultilib thumb/v8-m.main+dp/hard -iprefix /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/ -isysroot /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /snap/cmake/1299/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_d4d86.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m55 -mfloat-abi=hard -mthumb -mlibarch=armv8.1-m.main+fp.dp+mve.fp -march=armv8.1-m.main+fp.dp+mve.fp -Wall -Wextra -Wsign-compare -Wunused -Wswitch-default -Wdouble-promotion -Wredundant-decls -Wshadow -Wnull-dereference -Wno-format-extra-args -Wno-unused-function -Wno-unused-label -Wno-missing-field-initializers -Wno-return-type -Wformat=0 -Wno-int-conversion -std=gnu++14 -version -fno-unwind-tables -fno-rtti -fno-exceptions -o /tmp/ccGb3jF0.s
+        cc1plus: warning: command-line option '-Wno-int-conversion' is valid for C/ObjC but not for C++
+        GNU C++14 (Arm GNU Toolchain 12.2.MPACBTI-Rel1 (Build arm-12-mpacbti.34)) version 12.2.1 20230214 (arm-none-eabi)
+        	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include/c++/12.2.1"
+        ignoring duplicate directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v8-m.main+dp/hard"
+        ignoring duplicate directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include/c++/12.2.1/backward"
+        ignoring duplicate directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.2.1/include"
+        ignoring nonexistent directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi/usr/local/include"
+        ignoring duplicate directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.2.1/include-fixed"
+        ignoring duplicate directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include"
+        ignoring nonexistent directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi/usr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include/c++/12.2.1
+         /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v8-m.main+dp/hard
+         /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include/c++/12.2.1/backward
+         /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/include
+         /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/include-fixed
+         /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include
+        End of search list.
+        GNU C++14 (Arm GNU Toolchain 12.2.MPACBTI-Rel1 (Build arm-12-mpacbti.34)) version 12.2.1 20230214 (arm-none-eabi)
+        	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 5e85f5423081647975190a0162391d5c
+        COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-mcpu=cortex-m55' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wsign-compare' '-Wunused' '-Wswitch-default' '-Wdouble-promotion' '-Wredundant-decls' '-Wshadow' '-Wnull-dereference' '-Wno-format-extra-args' '-Wno-unused-function' '-Wno-unused-label' '-Wno-missing-field-initializers' '-Wno-return-type' '-Wformat=0' '-Wno-int-conversion' '-fno-unwind-tables' '-fno-rtti' '-fno-exceptions' '-o' 'CMakeFiles/cmTC_d4d86.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv8.1-m.main+fp.dp+mve.fp' '-march=armv8.1-m.main+fp.dp+mve.fp' '-dumpdir' 'CMakeFiles/cmTC_d4d86.dir/'
+         /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8.1-m.main+fp.dp+mve.fp -mfloat-abi=hard -meabi=5 -o CMakeFiles/cmTC_d4d86.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccGb3jF0.s
+        GNU assembler version 2.40.0 (arm-none-eabi) using BFD version (Arm GNU Toolchain 12.2.MPACBTI-Rel1 (Build arm-12-mpacbti.34)) 2.40.0.20230307
+        COMPILER_PATH=/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/12.2.1/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../libexec/gcc/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+dp/hard/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+dp/hard/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v8-m.main+dp/hard/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-mcpu=cortex-m55' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wsign-compare' '-Wunused' '-Wswitch-default' '-Wdouble-promotion' '-Wredundant-decls' '-Wshadow' '-Wnull-dereference' '-Wno-format-extra-args' '-Wno-unused-function' '-Wno-unused-label' '-Wno-missing-field-initializers' '-Wno-return-type' '-Wformat=0' '-Wno-int-conversion' '-fno-unwind-tables' '-fno-rtti' '-fno-exceptions' '-o' 'CMakeFiles/cmTC_d4d86.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv8.1-m.main+fp.dp+mve.fp' '-march=armv8.1-m.main+fp.dp+mve.fp' '-dumpdir' 'CMakeFiles/cmTC_d4d86.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX static library libcmTC_d4d86.a
+        /snap/cmake/1299/bin/cmake -P CMakeFiles/cmTC_d4d86.dir/cmake_clean_target.cmake
+        /snap/cmake/1299/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4d86.dir/link.txt --verbose=1
+        /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-ar qc libcmTC_d4d86.a CMakeFiles/cmTC_d4d86.dir/CMakeCXXCompilerABI.cpp.obj
+        /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-ranlib libcmTC_d4d86.a
+        make[2]: Leaving directory '/home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-jEEIEr'
+        make[1]: Leaving directory '/home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-jEEIEr'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include/c++/12.2.1]
+          add: [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v8-m.main+dp/hard]
+          add: [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include/c++/12.2.1/backward]
+          add: [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/include]
+          add: [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/include-fixed]
+          add: [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include]
+        end of search list found
+        collapse include dir [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include/c++/12.2.1] ==> [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/arm-none-eabi/include/c++/12.2.1]
+        collapse include dir [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v8-m.main+dp/hard] ==> [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v8-m.main+dp/hard]
+        collapse include dir [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include/c++/12.2.1/backward] ==> [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/backward]
+        collapse include dir [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/include] ==> [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include]
+        collapse include dir [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/include-fixed] ==> [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include-fixed]
+        collapse include dir [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include] ==> [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/arm-none-eabi/include]
+        implicit include dirs: [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/arm-none-eabi/include/c++/12.2.1;/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v8-m.main+dp/hard;/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/backward;/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include;/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include-fixed;/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/arm-none-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/snap/cmake/1299/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-none-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-jEEIEr]
+        ignore line: []
+        ignore line: [Run Build Command(s):/snap/cmake/1299/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d4d86/fast && make[1]: Entering directory '/home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-jEEIEr']
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_d4d86.dir/build.make CMakeFiles/cmTC_d4d86.dir/build]
+        ignore line: [make[2]: Entering directory '/home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-jEEIEr']
+        ignore line: [Building CXX object CMakeFiles/cmTC_d4d86.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-g++   -std=gnu++14   -v -mcpu=cortex-m55 -mfloat-abi=hard -Wall -Wextra -Wsign-compare -Wunused -Wswitch-default -Wdouble-promotion -Wredundant-decls -Wshadow -Wnull-dereference -Wno-format-extra-args -Wno-unused-function -Wno-unused-label -Wno-missing-field-initializers -Wno-return-type -Wno-format -Wno-int-conversion -fno-unwind-tables -fno-rtti -fno-exceptions -o CMakeFiles/cmTC_d4d86.dir/CMakeCXXCompilerABI.cpp.obj -c /snap/cmake/1299/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-g++]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-gnu-ld --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 12.2.MPACBTI-Rel1 (Build arm-12-mpacbti.34)' --with-bugurl=https://bugs.linaro.org/]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.2.1 20230214 (Arm GNU Toolchain 12.2.MPACBTI-Rel1 (Build arm-12-mpacbti.34)) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-mcpu=cortex-m55' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wsign-compare' '-Wunused' '-Wswitch-default' '-Wdouble-promotion' '-Wredundant-decls' '-Wshadow' '-Wnull-dereference' '-Wno-format-extra-args' '-Wno-unused-function' '-Wno-unused-label' '-Wno-missing-field-initializers' '-Wno-return-type' '-Wformat=0' '-Wno-int-conversion' '-fno-unwind-tables' '-fno-rtti' '-fno-exceptions' '-o' 'CMakeFiles/cmTC_d4d86.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv8.1-m.main+fp.dp+mve.fp' '-march=armv8.1-m.main+fp.dp+mve.fp' '-dumpdir' 'CMakeFiles/cmTC_d4d86.dir/']
+        ignore line: [ /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/12.2.1/cc1plus -quiet -v -imultilib thumb/v8-m.main+dp/hard -iprefix /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/ -isysroot /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /snap/cmake/1299/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_d4d86.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m55 -mfloat-abi=hard -mthumb -mlibarch=armv8.1-m.main+fp.dp+mve.fp -march=armv8.1-m.main+fp.dp+mve.fp -Wall -Wextra -Wsign-compare -Wunused -Wswitch-default -Wdouble-promotion -Wredundant-decls -Wshadow -Wnull-dereference -Wno-format-extra-args -Wno-unused-function -Wno-unused-label -Wno-missing-field-initializers -Wno-return-type -Wformat=0 -Wno-int-conversion -std=gnu++14 -version -fno-unwind-tables -fno-rtti -fno-exceptions -o /tmp/ccGb3jF0.s]
+        ignore line: [cc1plus: warning: command-line option '-Wno-int-conversion' is valid for C/ObjC but not for C++]
+        ignore line: [GNU C++14 (Arm GNU Toolchain 12.2.MPACBTI-Rel1 (Build arm-12-mpacbti.34)) version 12.2.1 20230214 (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include/c++/12.2.1"]
+        ignore line: [ignoring duplicate directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v8-m.main+dp/hard"]
+        ignore line: [ignoring duplicate directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include/c++/12.2.1/backward"]
+        ignore line: [ignoring duplicate directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.2.1/include"]
+        ignore line: [ignoring nonexistent directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.2.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include"]
+        ignore line: [ignoring nonexistent directory "/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi/usr/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include/c++/12.2.1]
+        ignore line: [ /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v8-m.main+dp/hard]
+        ignore line: [ /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include/c++/12.2.1/backward]
+        ignore line: [ /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/include]
+        ignore line: [ /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/include-fixed]
+        ignore line: [ /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (Arm GNU Toolchain 12.2.MPACBTI-Rel1 (Build arm-12-mpacbti.34)) version 12.2.1 20230214 (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 5e85f5423081647975190a0162391d5c]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-mcpu=cortex-m55' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wsign-compare' '-Wunused' '-Wswitch-default' '-Wdouble-promotion' '-Wredundant-decls' '-Wshadow' '-Wnull-dereference' '-Wno-format-extra-args' '-Wno-unused-function' '-Wno-unused-label' '-Wno-missing-field-initializers' '-Wno-return-type' '-Wformat=0' '-Wno-int-conversion' '-fno-unwind-tables' '-fno-rtti' '-fno-exceptions' '-o' 'CMakeFiles/cmTC_d4d86.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv8.1-m.main+fp.dp+mve.fp' '-march=armv8.1-m.main+fp.dp+mve.fp' '-dumpdir' 'CMakeFiles/cmTC_d4d86.dir/']
+        ignore line: [ /opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8.1-m.main+fp.dp+mve.fp -mfloat-abi=hard -meabi=5 -o CMakeFiles/cmTC_d4d86.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccGb3jF0.s]
+        ignore line: [GNU assembler version 2.40.0 (arm-none-eabi) using BFD version (Arm GNU Toolchain 12.2.MPACBTI-Rel1 (Build arm-12-mpacbti.34)) 2.40.0.20230307]
+        ignore line: [COMPILER_PATH=/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/12.2.1/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../libexec/gcc/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+dp/hard/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+dp/hard/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/thumb/v8-m.main+dp/hard/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/:/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-mcpu=cortex-m55' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wsign-compare' '-Wunused' '-Wswitch-default' '-Wdouble-promotion' '-Wredundant-decls' '-Wshadow' '-Wnull-dereference' '-Wno-format-extra-args' '-Wno-unused-function' '-Wno-unused-label' '-Wno-missing-field-initializers' '-Wno-return-type' '-Wformat=0' '-Wno-int-conversion' '-fno-unwind-tables' '-fno-rtti' '-fno-exceptions' '-o' 'CMakeFiles/cmTC_d4d86.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv8.1-m.main+fp.dp+mve.fp' '-march=armv8.1-m.main+fp.dp+mve.fp' '-dumpdir' 'CMakeFiles/cmTC_d4d86.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX static library libcmTC_d4d86.a]
+        ignore line: [/snap/cmake/1299/bin/cmake -P CMakeFiles/cmTC_d4d86.dir/cmake_clean_target.cmake]
+        ignore line: [/snap/cmake/1299/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4d86.dir/link.txt --verbose=1]
+        ignore line: [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-ar qc libcmTC_d4d86.a CMakeFiles/cmTC_d4d86.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/opt/arm/gcc-arm-none-eabi/arm-gnu-toolchain-12.2.mpacbti-rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-ranlib libcmTC_d4d86.a]
+        ignore line: [make[2]: Leaving directory '/home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-jEEIEr']
+        ignore line: [make[1]: Leaving directory '/home/ubuntu/Paddle-examples-for-AVH/OCR-example/Text-recognition-example-m85/build/cmsis_nn/CMakeFiles/CMakeScratch/TryCompile-jEEIEr']
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+...
